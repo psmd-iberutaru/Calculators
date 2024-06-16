@@ -1,0 +1,12 @@
+name: sparrow-calculator-environment
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - scipy
+  - astropy
+  - matplotlib
+  - pip
+  - pip:
+    - pip
