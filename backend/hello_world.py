@@ -1,5 +1,6 @@
 """Backend functionality for `hello_world.ipynb`."""
 
+from backend import common
 
 def hello_message() -> str:
     """Return a Hello World message.
