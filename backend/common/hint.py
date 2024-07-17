@@ -21,4 +21,4 @@ from typing import *
 
 # Arrays. We use ndarray instead as ArrayLike casts a rather larger union
 # in the documentation.
-from numpy import ndarray
+from numpy import NDArray

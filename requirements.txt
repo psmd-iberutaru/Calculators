@@ -1,2 +1,6 @@
 black[jupyter]
 ruff
+numpy
+scipy
+astropy
+matplotlib

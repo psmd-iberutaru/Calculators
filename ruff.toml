@@ -1,0 +1,28 @@
+# Assume Python 3.10
+target-version = "py310"
+
+[lint]
+select = [
+    "ALL",
+]
+ignore = [
+    # Allow non-abstract empty methods in abstract base classes.
+    "B027",
+    # Allow boolean positional values in function declarations and calls, 
+    # like `dict.get(... True)`. We ignore all of the rules regarding boolean 
+    # positional traps, because generally, it is a non-issue.
+    "FBT",
+    # Incompatabilies; these are objectively wrong.
+    "D203", "D213",
+    # Allow variable assignment for return. It is easier to find and follow the
+    # return path.
+    "RET504",
+    # Sometimes there are actual reasons for having a lot of arguments.
+    "PLR0913",
+    # Our file paths are better represented as base strings, we do not ever
+    # need to overcomplicate our paths with OOP. As such, suggestions to 
+    # use pathlib really is not needed.
+    "PTH",
+]
+unfixable = [
+]
